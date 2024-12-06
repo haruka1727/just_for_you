@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld />
+  <FirstPage />
 </template>
 
 <script setup>
