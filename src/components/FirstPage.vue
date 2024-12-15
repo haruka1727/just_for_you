@@ -2,9 +2,9 @@
     <v-app class="background">
         <v-container class="d-flex justify-center align-center" style="height: 100vh;">
             <v-card class="mx-auto" outlined>
-                <v-card-title class="text-h5">
+                <v-card-text class="text-h5">
                     {{ randomPhrase }}
-                </v-card-title>
+                </v-card-text>
                 <v-card-actions class="justify-center">
                     <v-btn class="custom-btn" @click="getRandomPhrase">More</v-btn>
                 </v-card-actions>
@@ -91,7 +91,9 @@ export default {
         background-size: cover; /* Adatta l'immagine per coprire l'intero sfondo */
         background-position: center;
     }
-    .v-card-title {
+    
+    .v-card-text {
+        text-overflow: ellipsis;
         font-family: 'Playfair Display', serif; /* Un font elegante */
         font-size: 1.5rem; /* Dimensione del testo */
         color: #4a4a4a; /* Colore sofisticato, grigio scuro */
@@ -99,6 +101,7 @@ export default {
         line-height: 1.6; /* Migliora la leggibilità */
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombreggiatura per un tocco raffinato */
         padding: 16px; /* Spaziatura intorno al testo */
+        
     }
 
     .custom-btn {
